@@ -25,12 +25,11 @@ const Todo = () => {
 						onChange={event => setInputData(event.target.value)}
 					/>
 					<span class='input-group-btn'>
-						<button class='btn btn-outline-secondary' type='submit'>
-							<i
-								class='fa fa-solid fa-plus add-btn'
-								onClick={() =>
-									dispatch(addTodo(inputData, setInputData("")))
-								}></i>
+						<button
+							class='btn btn-outline-secondary'
+							title='Delete item'
+							onClick={() => dispatch(addTodo(inputData, setInputData("")))}>
+							<i class='fa fa-solid fa-plus add-btn'></i>
 						</button>
 					</span>
 				</div>
